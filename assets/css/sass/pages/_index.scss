@@ -1,0 +1,290 @@
+/* Start Loading Page */
+/*
+.spinner-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $sub-color;
+    z-index: 9999;
+    .spinner {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        margin: 100px auto;
+        top: 35%;
+        left: 0;
+        transform: translate(0 , -50%);
+        .double-bounce1, .double-bounce2 {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: $main-color;
+            opacity: 0.6;
+            position: absolute;
+            -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+            animation: sk-bounce 2.0s infinite ease-in-out;
+        }
+        .double-bounce2 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+          }
+    }
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+
+  @keyframes sk-bounce {
+    0%, 100% {
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+/* End Loading Page */
+
+
+/* Start Header Section */
+header {
+    position: relative;
+    overflow: hidden;
+    min-height:660px;
+    .overlay {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.8);
+        .header-content {
+            color:#fff;
+            h1 {
+                margin-top:70px;
+                font-size: 60px;
+                line-height:1.8;
+                @media(max-width:767px) {
+                    font-size:25px;
+                }
+                span {
+                    color:$main-color;
+                }
+            }
+            a {
+                display: inline-block;
+                width: 200px;
+                background-color: $main-color;
+                color: #fff;
+                padding: 10px;
+                border: 1px solid $main-color;
+                border-radius: 10px;
+                transition:all .3s ease-in-out;
+                &:hover {
+                    text-decoration: none;
+                    background-color:$main-color;
+                }
+            }
+        }
+        .header-content {
+            form {
+                width:500px;
+                background-color:$sub-color;
+                padding:30px 20px;
+                border-radius: 3px;
+                input, select {
+                    margin-bottom: 20px;
+                    padding:10px;
+                    color:#000;
+                    display: block;
+                    width: 100%;
+                    border-radius: 3px;
+                }
+                input[type="submit"] {
+                    background:$main-color;
+                    border:1px solid $main-color;
+                    color:#fff;
+                }
+                img {
+                    width: 200px;
+                }
+            }
+            @media (max-width:767px) {
+                form {
+                    width:100%;
+                }
+            }
+        }
+    }
+    .fullBackground {
+        background-position:center center;
+        background-attachment:fixed;
+        background-size: cover;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-1
+    }
+    .fa-chevron-down {
+        color: #fff;
+        position: absolute;
+        bottom: 5%;
+        transform: translate(-50%);
+        border: 2px solid #fff;
+        width: 30px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 17px;
+        left:50%;
+        cursor: pointer;
+        transition:all .5s ease-in-out;
+        &:hover {
+            background-color:$main-color;
+            border:2px solid $main-color;
+        }
+    }
+
+}
+
+
+/* End Header Section */
+
+/* Start services section */
+.services {
+    padding:20px;
+    a {
+        background: linear-gradient(to right, $main-color, $sub-color);
+        display: block;
+        padding: 10px;
+        border-radius: 3px;
+        color: #fff;
+    }
+    @media (max-width:767px) {
+        a {
+            margin-bottom: 20px;
+        }
+    }
+}
+/* End services section */
+
+/* Start Our Events Section */
+
+.events {
+    padding:40px 0;
+    h2 {
+        font-size: 1.9rem;
+        margin-bottom: 30px;
+    }
+    .links {
+        margin-bottom: 30px;
+        li {
+            display: inline-block;
+            margin-right:5px;
+            a {
+                background:transparent;
+                color:$sub-color;
+                padding:5px 15px;
+                border-radius:3px;
+                border:1px solid $sub-color;
+            }
+        }
+        .active {
+            a {
+                color:#fff;
+                background-color:$sub-color;
+                border:1px solid $sub-color
+            }
+        }
+    }
+    .eve-box {
+        margin-bottom:20px;
+        img {
+            width: 100%;
+        }
+        ul {
+            margin:20px 0;
+            li {
+                display: inline-block;
+                margin-right:0px;
+                &:not(:last-of-type) {
+                    a {
+                        border-right: 1px solid #000;
+                        padding: 0 6px 0 0;
+                    }
+                }
+            }
+            .active {
+                a {
+                    color:#999
+                }
+            }
+        }
+        h5 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 1.6;
+            color: #777;
+        }
+        a.read-more {
+            display: block;
+            text-align: center;
+            background: linear-gradient(to right, $main-color, $sub-color);
+            padding: 7px;
+            color: #fff;
+        }
+    }
+    .latest {
+        margin:30px 0;
+        h3 {
+            background: $main-color;
+            padding: 5px 10px;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        .media {
+            background-color:#eee;
+            padding:5px;
+            border-bottom:2px dotted $main-color;
+            margin-top: 0;
+            .media-left {
+                a {
+                    img {
+                        width:60px;
+                        border-radius: 50%;
+                        margin-right:5px;
+                    }
+                }
+            }
+            .media-body {
+                .media-heading {
+                    margin-top:10px;
+                }
+                span {
+                    color:$sub-color;
+                }
+            }
+        }
+    }
+    .subscribe {
+        display: block;
+        margin:30px 0;
+        background-color:$main-color;
+        padding:20px;
+        color:#fff;
+        border-radius: 3px;
+    }
+}
+
+
+/* End Our Events Section */
+
+
+

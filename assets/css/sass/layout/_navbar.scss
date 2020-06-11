@@ -1,0 +1,93 @@
+/* Start Upper Navbar Section */
+
+.upper {
+    padding:20px;
+    .dates {
+        font-size:1.1rem;
+        i {
+            color:$sub-color;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+    }
+    .register-btns {
+        li {
+            display:inline-block;
+            margin-left:10px;
+            transition:all .5s ease-in-out;
+            a {
+                font-size: 1rem;
+                background-color: $sub-color;
+                color: #fff;
+                padding: 2px 18px;
+                border-radius: 30px;
+                
+            }
+            &:hover {
+                a {
+                    background-color: $sub-color;
+                    color:#fff;
+                    border:1px solid $sub-color;
+                }
+            }
+        }
+        .active {
+            a {
+                background-color:#fff;
+                color:$sub-color;
+                border:1px solid $sub-color;
+            }
+        }
+    }
+    @media (max-width:767px) {
+        .dates, .register-btns {
+            display: block;
+            text-align: center;
+        }
+        .dates {
+            margin-bottom:20px;
+        }
+    }
+}
+
+/* End Upper Navbar Section */
+
+
+/* Start navbar section */
+
+.navbar {
+    background:transparent;
+    border:none;
+    padding-top:10px;
+    .navbar-header {
+        .navbar-brand  {
+            img {
+                width: 200px;
+                margin:-14px auto 0;
+            }
+        }
+    }
+    .navbar-collapse {
+      padding-top: 10px;
+        .navbar-nav {
+            li {
+                a {
+                    color:#fff;
+                    font-size: 18px;
+                    &:hover, &:focus {
+                        color: #fff;
+                        background-color: #07AC89;
+                    }
+                }
+            }
+            .dropdown {
+                > li {
+                    > a {
+                        color:$sub-color
+                    }
+                }
+            }
+        }
+    }
+}
+/* end navbar section */
